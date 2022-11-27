@@ -3,7 +3,6 @@ module github.com/wenboyu00/go_pkg_depoly/mq
 go 1.16
 
 require (
-	github.com/wenboyu00/go_pkg_depoly/logger v0.0.0-20220605100829-4a70f3b0539a
 	github.com/Shopify/sarama v1.19.0
 	github.com/Shopify/toxiproxy v2.1.4+incompatible // indirect
 	github.com/bsm/sarama-cluster v2.1.15+incompatible
@@ -17,5 +16,6 @@ require (
 	github.com/pierrec/lz4 v2.6.1+incompatible // indirect
 	github.com/pkg/errors v0.9.1
 	github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475 // indirect
+	github.com/wenboyu00/go_pkg_depoly/logger v0.0.0-20221127111752-2206d08d4483
 	go.uber.org/zap v1.21.0
 )

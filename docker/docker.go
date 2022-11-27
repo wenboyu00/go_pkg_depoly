@@ -107,4 +107,5 @@ func (d *Docker) getContainerStatus() string {
 		}
 		return DockerStatusStarting
 	}
+	return ""
 }
