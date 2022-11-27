@@ -1,9 +1,9 @@
 package main
 
 import (
+	"github.com/prometheus/client_golang/prometheus"
 	"github.com/wenboyu00/go_pkg_depoly/httpclient"
 	"github.com/wenboyu00/go_pkg_depoly/prome"
-	"github.com/prometheus/client_golang/prometheus"
 	"math/rand"
 	"time"
 )
