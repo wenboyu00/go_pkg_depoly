@@ -1,4 +1,4 @@
-module gitee.com/phper95/pkg/logger
+module github.com/wenboyu00/go_pkg_depoly/logger
 
 go 1.16
 

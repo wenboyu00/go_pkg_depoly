@@ -1,4 +1,4 @@
-module gitee.com/phper95/pkg/errors
+module github.com/wenboyu00/go_pkg_depoly/errors
 
 go 1.16
 

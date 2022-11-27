@@ -3,8 +3,8 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"gitee.com/phper95/pkg/logger"
-	"gitee.com/phper95/pkg/mq"
+	"github.com/wenboyu00/go_pkg_depoly/logger"
+	"github.com/wenboyu00/go_pkg_depoly/mq"
 	"github.com/Shopify/sarama"
 	"go.uber.org/zap"
 	"os"

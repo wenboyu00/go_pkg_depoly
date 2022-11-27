@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gitee.com/phper95/pkg/db"
+	"github.com/wenboyu00/go_pkg_depoly/db"
 	"go.uber.org/zap"
 	"time"
 )

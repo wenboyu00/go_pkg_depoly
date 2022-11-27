@@ -1,8 +1,8 @@
-package mysql
+package db
 
 import (
 	"fmt"
-	"gitee.com/phper95/pkg/errors"
+	"github.com/wenboyu00/go_pkg_depoly/errors"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"

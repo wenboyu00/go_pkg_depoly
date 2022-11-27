@@ -1,4 +1,4 @@
-module gitee.com/phper95/pkg/breaker
+module github.com/wenboyu00/go_pkg_depoly/breaker
 
 go 1.16
 

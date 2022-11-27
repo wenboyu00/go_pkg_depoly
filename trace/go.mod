@@ -1,4 +1,4 @@
-module gitee.com/phper95/pkg/trace
+module github.com/wenboyu00/go_pkg_depoly/trace
 
 go 1.16
 

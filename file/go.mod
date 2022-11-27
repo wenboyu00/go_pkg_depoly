@@ -1,3 +1,3 @@
-module gitee.com/phper95/pkg/file
+module github.com/wenboyu00/go_pkg_depoly/file
 
 go 1.16

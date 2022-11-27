@@ -3,7 +3,7 @@ package routine
 import (
 	"context"
 	"fmt"
-	"gitee.com/phper95/pkg/errors"
+	"github.com/wenboyu00/go_pkg_depoly/errors"
 	"log"
 	"os"
 	"sync"

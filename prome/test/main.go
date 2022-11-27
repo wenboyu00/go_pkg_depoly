@@ -1,8 +1,8 @@
 package main
 
 import (
-	"gitee.com/phper95/pkg/httpclient"
-	"gitee.com/phper95/pkg/prome"
+	"github.com/wenboyu00/go_pkg_depoly/httpclient"
+	"github.com/wenboyu00/go_pkg_depoly/prome"
 	"github.com/prometheus/client_golang/prometheus"
 	"math/rand"
 	"time"

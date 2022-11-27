@@ -6,7 +6,7 @@ import (
 	"crypto/sha256"
 	"encoding/base64"
 	"fmt"
-	"gitee.com/phper95/pkg/timeutil"
+	"github.com/wenboyu00/go_pkg_depoly/timeutil"
 	"github.com/pkg/errors"
 	"net/http"
 	"net/url"

@@ -2,8 +2,8 @@ package cache
 
 import (
 	"fmt"
-	"gitee.com/phper95/pkg/errors"
-	"gitee.com/phper95/pkg/timeutil"
+	"github.com/wenboyu00/go_pkg_depoly/errors"
+	"github.com/wenboyu00/go_pkg_depoly/timeutil"
 	"github.com/go-redis/redis/v7"
 	"go.uber.org/zap"
 	"strings"

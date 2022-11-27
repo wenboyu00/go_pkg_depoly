@@ -1,3 +1,3 @@
-module gitee.com/phper95/pkg/shutdown
+module github.com/wenboyu00/go_pkg_depoly/shutdown
 
 go 1.16

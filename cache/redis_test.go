@@ -1,7 +1,7 @@
 package cache
 
 import (
-	"gitee.com/phper95/pkg/compression"
+	"ggithub.com/wenboyu00/go_pkg_depoly/compression"
 	"github.com/go-redis/redis/v7"
 	"github.com/stretchr/testify/assert"
 	"testing"

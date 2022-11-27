@@ -1,4 +1,4 @@
-module gitee.com/phper95/pkg/aws_s3
+module github.com/wenboyu00/go_pkg_depoly/aws_s3
 
 go 1.16
 
