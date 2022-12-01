@@ -1,5 +1,7 @@
 module github.com/wenboyu00/go_pkg_depoly/aws_s3
 
-go 1.16
+go 1.18
 
 require github.com/aws/aws-sdk-go v1.44.95
+
+require github.com/jmespath/go-jmespath v0.4.0 // indirect
