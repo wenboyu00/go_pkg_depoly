@@ -1,0 +1,5 @@
+mirrors:
+  docker.io:
+    endpoint:
+      - "https://fsp2sfpr.mirror.aliyuncs.com/"
+      - "https://qvz256as.mirror.aliyuncs.com"
