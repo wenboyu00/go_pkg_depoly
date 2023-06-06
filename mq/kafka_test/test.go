@@ -3,9 +3,9 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/Shopify/sarama"
 	"github.com/wenboyu00/go_pkg_depoly/logger"
 	"github.com/wenboyu00/go_pkg_depoly/mq"
-	"github.com/Shopify/sarama"
 	"go.uber.org/zap"
 	"os"
 	"os/signal"
