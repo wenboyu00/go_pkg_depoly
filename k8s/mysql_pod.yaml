@@ -6,16 +6,19 @@ metadata:
     purpose: demonstrate-envars
 spec:
   containers:
-  - name: mysql
-    image: mysql:5.7
-    env:
-    - name: MYSQL_ROOT_PASSWORD
-      value: "123456"
-    ports:
-      - containerPort: 3306
-    volumeMounts:
-      - mountPath: /var/lib/mysql # 容器中的目录
-        name: data-volume
+    - name: mysql
+      image: mysql:5.7
+      env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: "123456"
+      ports:
+        - containerPort: 3306
+      volumeMounts:
+        - mountPath: /var/lib/mysql # 容器中的目录
+          name: data-volume
+        - mountPath: /etc/mysql/conf.d # mysql配置文件位置
+          name: conf-volume
+          readOnly: true
 
   volumes:
     - name: data-volume
@@ -23,3 +26,26 @@ spec:
         # 宿主机上目录位置
         path: /home/mysql/data
         type: DirectoryOrCreate
+    # config map卷
+    - name: conf-volume
+      configMap:
+        name: mysql-config
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-config
+data:
+  # 设置mysql服务器端和客户端的字符格式
+  mysql.cnf: |
+    [mysqld]
+    character-set-server=utf8mb4
+    collation-server=utf8mb4_general_ci
+    init-connect='SET NAMES utf8mb4'
+
+    [client]
+    default-character-set=utf8mb4
+
+    [mysql]
+    default-character-set=utf8mb4
