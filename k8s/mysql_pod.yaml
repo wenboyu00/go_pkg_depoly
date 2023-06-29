@@ -1,16 +1,27 @@
 apiVersion: v1
+kind: Secret
+metadata:
+  name: mysql-password
+type:
+  Opaque
+data:
+  PASSWORD: MTIzNDU2
+---
+apiVersion: v1
 kind: Pod
 metadata:
   name: mysql-pod
-  labels:
-    purpose: demonstrate-envars
 spec:
   containers:
     - name: mysql
       image: mysql:5.7
       env:
         - name: MYSQL_ROOT_PASSWORD
-          value: "123456"
+          valueFrom:
+            secretKeyRef:
+              name: mysql-password
+              key: PASSWORD
+              optional: false # 此值为默认值；表示secret已经存在了
       ports:
         - containerPort: 3306
       volumeMounts:
