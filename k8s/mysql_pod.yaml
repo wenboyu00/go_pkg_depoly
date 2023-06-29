@@ -33,10 +33,12 @@ spec:
 
   volumes:
     - name: data-volume
-      hostPath:
-        # 宿主机上目录位置
-        path: /home/mysql/data
-        type: DirectoryOrCreate
+#      hostPath:
+#        # 宿主机上目录位置
+#        path: /home/mysql/data
+#        type: DirectoryOrCreate
+      persistentVolumeClaim:
+        claimName: task-pv-claim
     # config map卷
     - name: conf-volume
       configMap:
